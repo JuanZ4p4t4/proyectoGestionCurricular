@@ -23,12 +23,5 @@ Route::get('gestion-curricular/evaluar-diseño-curricular', function() {
     return "En esta página podrá evaluar el Diseño Curricular.";
 });
 
-//Agregando nueva ruta para editar plan curricular
-Route::get('gestion-curricular/editar-plan-curricular', function() {
-    return "En esta página podrá editar plan curricular.";
-});
 
-//Agregando nueva ruta para publicar diseño final de plan curricular
-Route::get('gestion-curricular/publicar-diseño-curricular-final', function() {
-    return "En esta página podrá publicar diseño final de plan curricular.";
-});
+
