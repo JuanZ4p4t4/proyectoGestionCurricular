@@ -23,5 +23,21 @@ Route::get('gestion-curricular/evaluar-diseño-curricular', function() {
     return "En esta página podrá evaluar el Diseño Curricular.";
 });
 
+//Agregando nueva ruta para editar plan curricular
+Route::get('gestion-curricular/editar-plan-curricular', function() {
+    return "En esta página podrá editar plan curricular.";
+});
 
+//Agregando nueva ruta para publicar diseño final de plan curricular
+Route::get('gestion-curricular/publicar-diseño-curricular-final', function() {
+    return "En esta página podrá publicar diseño final de plan curricular.";
+});
 
+//mejorando el codigo con las rutas: 1 variable y 2 variables
+Route::get('practicas/{prodecimiento}/{registro}', function($prodecimiento, $registro = null){
+    if($registro) {//condicional si se indica un registro
+        return "Bienvenidos al registro: $registro, del procedimiento $procedimiento";
+    } else { //en caso no se indique un registro
+        return "Bienvenidos al procedimiento: $procedimiento";
+    }
+});
